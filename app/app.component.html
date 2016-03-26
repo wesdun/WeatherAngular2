@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="row">
+        <div id="iconDiv">
+            <img [src]="{{weatherData.iconUrl}}" />
+        </div>
+        <div id="tempDiv">
+            {{weatherData.temp | number:0}} &deg; {{weatherData.tempUnit[0]}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="well">
+            {{weatherData.city}}
+        </div>
+        <div class="well">
+            {{weatherData.description}}
+        </div>
+        <div class="well">
+            {{weatherData.wind.speed}}
+        </div>
+
+    </div>
+    <button class="btn btn-active" (click)="toggleTempUnit()">
+        {{weatherData.tempToggleUnit}}
+    </button>
+</div>

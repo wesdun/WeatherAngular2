@@ -77,3 +77,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+.idea/encodings.xml
+.idea/libraries/WeatherAngular2_node_modules.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/WeatherAngular2.iml
+.idea/modules.xml
+.idea/workspace.xml
